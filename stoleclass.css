@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+}
+
+.header {
+    background-color: rgb(115, 173, 111);
+    width: 100%;
+    height: 18%;
+    box-sizing: border-box;
+}
+
+.menu {
+    background-color: rgb(241, 164, 92);
+    width: 100%;
+    height: 7%;
+    box-sizing: border-box;
+    padding-top: 1%;
+    font-family: 'Lucida Sans';
+}
+
+.main {
+    background-color: rgb(188, 232, 185);
+    width: 100%;
+    height: 65%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    gap: 30%;
+}
+
+.footer {
+    background-color: rgb(115, 179, 111);
+    width: 100%;
+    height: 10%;
+    box-sizing: border-box;
+}
+
+.title {
+    text-align: center;
+    font-family: 'Lucida Sans';
+    font-size: 460%;
+    padding-top: 1%;
+}
+
+.subtitle {
+    text-align: center;
+    font-family: 'Lucida Sans';
+    font-size: 180%;
+}
+
+.menu > ul {
+    display: flex;
+    justify-content: center;
+    gap: 8%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 150%;
+}
+
+.menu > ul > li {
+    position: relative;
+}
+
+.menu > ul > li > ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(235, 179, 128);
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    visibility: hidden;
+}
+
+.menu > ul > li > ul > li {
+    padding: 5% 10%;
+    white-space: nowrap;
+}
+
+.menu > ul > li:hover > ul {
+    visibility: visible;
+}
+
+.imm1 {
+    display: block;
+    margin: 0 auto;
+    height: 40%;
+    padding-top: 2%;
+    position: relative;
+    z-index: 1;
+}
+
+.imm {
+    position: absolute;
+    height: 7%;
+    top: 28%;
+}
+
+.imm-left {
+    left: 10%;
+}
+
+.imm-center {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.imm-right {
+    right: 10%;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 99%;
+    height: 50%;
+    position: absolute;
+    padding-top: 0.5%;
+    padding-left: 2%;
+    margin-top: 7%;
+    font-family: 'Lucida Sans';
+    box-sizing: border-box;
+}
+
+table {
+    font-family: 'Lucida Sans';
+    font-size: 150%;
+    font-weight: 700;
+}
+
+td {
+    table-layout: fixed; 
+    line-height: 170%;
+}
+
+table td:nth-child(1) {
+    width: 5%;
+}
+
+table td:nth-child(2) {
+    width: 45%;
+}
+
+table td:nth-child(3) {
+    width: 10%;
+}
+
+.ore {
+    border: 5px solid red;
+    border-radius: 10px;
+    padding: 3px 6px;
+    background-color: rgb(255, 147, 120);
+    font-weight: bolder;
+}
+
+hr {
+    height: 5px;
+    width: 70%;
+    background-color: rgb(241, 164, 92);
+    border-color: rgb(241, 164, 92);
+}
